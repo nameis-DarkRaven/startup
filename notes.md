@@ -1,3 +1,3 @@
 References:
-- [README](startup\README.md)
+- [README](README.md)
 
