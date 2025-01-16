@@ -28,3 +28,17 @@ It is a truth universally acknowledged that everything is either a duck or not a
 - **Web Service** - Used https://random-d.uk/api to randomize an image of a duck as the background for the login page. 
 - **Database and Login** - Used to store users so that they can save and continue their game on any device.
 - **WebSocket** - Used to save and store player data to a database automatically. 
+
+
+
+## AWS Deliverable
+
+current website: http://54.91.44.193/
+
+### What I've Learned
+- DNS grabs IP from Web server for you
+- Domains are read from the right. Example: react.simon.cs260.click has the root domain cs260.click and the top-level domain .click. You buy domains as a root including a pair of sld and tld.
+- Personal IP address is stored in LocalHost, and your computer already knows it without having to ask around.
+
+
+
