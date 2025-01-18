@@ -39,7 +39,7 @@ Website: [duck-io](https://startup.duck-io.click/)
 - DNS grabs IP from Web server for you
 - Domains are read from the right. Example: react.simon.cs260.click has the root domain cs260.click and the top-level domain .click. You buy domains as a root including a pair of sld and tld.
 - Personal IP address is stored in LocalHost, and your computer already knows it without having to ask around.
-- command to remote shell: ssh -i [pem doc] ubuntu@34.228.248.115
+- command to remote shell: ssh -i [pem doc] ubuntu@34.228.248.115 or ssh -i [pem doc] ubuntu@duck-io.click
 
 
 
