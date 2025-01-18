@@ -35,10 +35,11 @@ It is a truth universally acknowledged that everything is either a duck or not a
 
 current website: http://54.91.44.193/
 
-### What I've Learned
+### Notes
 - DNS grabs IP from Web server for you
 - Domains are read from the right. Example: react.simon.cs260.click has the root domain cs260.click and the top-level domain .click. You buy domains as a root including a pair of sld and tld.
 - Personal IP address is stored in LocalHost, and your computer already knows it without having to ask around.
+- command to remote shell: ssh -i [pem doc] ubuntu@34.228.248.115
 
 
 
