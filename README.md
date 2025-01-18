@@ -33,7 +33,7 @@ It is a truth universally acknowledged that everything is either a duck or not a
 
 ## AWS Deliverable
 
-current website: http:startup.duck-io.click
+current website: [duck-io](http://startup.duck-io.click/)
 
 ### Notes
 - DNS grabs IP from Web server for you
