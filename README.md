@@ -39,7 +39,27 @@ Website: [duck-io](https://startup.duck-io.click/)
 - DNS grabs IP from Web server for you
 - Domains are read from the right. Example: react.simon.cs260.click has the root domain cs260.click and the top-level domain .click. You buy domains as a root including a pair of sld and tld.
 - Personal IP address is stored in LocalHost, and your computer already knows it without having to ask around.
-- command to remote shell: ssh -i [pem doc] ubuntu@34.228.248.115 or ssh -i [pem doc] ubuntu@duck-io.click
+- command to remote shell: ```ssh -i [pem doc] ubuntu@34.228.248.115``` or ```ssh -i [pem doc] ubuntu@duck-io.click```.
+
+## HTML & CSS Deliverable
+
+### Notes
+- [MDN](https://developer.mozilla.org/en-US/) is used for HTML, CSS, and JavaScript documentation.
+- CSS is formatted as follows:
+  
+  ![CSS Format](https://github.com/webprogramming260/.github/blob/main/profile/css/introduction/cssDefinitions.jpg)
+- p for paragaphs is an example of an element selector; there are also ids and classes, which are custom selectors
+- you can also combine them into element classes; example:
+  ```
+  p.highlight = any p item with class="highlight"
+  ```
+- other selectors:
+  * list - affects a given list of selectors
+  * Descendant - a list of descendants such as body sections, which affects any section that is a descendant of a body
+  * Child - similar to descendant that affects any p that is a direct child of a section with example section > p
+  * Pseudo - state based; example: p:hover, affects p items when mouse is hovering over them
+  
+  
 
 
 
