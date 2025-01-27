@@ -58,7 +58,8 @@ Website: [duck-io](https://startup.duck-io.click/)
   * Descendant - a list of descendants such as body sections, which affects any section that is a descendant of a body
   * Child - similar to descendant that affects any p that is a direct child of a section with example section > p
   * Pseudo - state based; example: p:hover, affects p items when mouse is hovering over them
-  
+- Keyframes:
+  * from {start} next item {next item} to {end}  
   
 
 
