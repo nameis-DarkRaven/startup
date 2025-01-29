@@ -63,6 +63,13 @@ Website: [duck-io](https://startup.duck-io.click/)
 
 Turns out HTML has its own styling, albeit not much. However, style="" is very useful. I can use it to change the color of the background of something, its text, and more.
   
-
+### Deliverable
+- [ ] HTML Pages - home page, clicker page, and about page with my elevator pitch
+- [ ] Links - there are links at the top of each page to each other page
+- [ ] Web API - When the page loads (including reloads), the background changes to a random duck picture
+- [ ] Images - There is a placeholder duck picture where the duck to be clicked is on the clicker page
+- [ ] DB/Login - one can log in and register
+- [ ] Websocket - There is a count placeholder on the duck clicker page
+- [ ] Text - there is text both on the about page and in each button for the upgrades and "duckielutions", which are currently placeholders.
 
 
