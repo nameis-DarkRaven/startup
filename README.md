@@ -59,7 +59,9 @@ Website: [duck-io](https://startup.duck-io.click/)
   * Child - similar to descendant that affects any p that is a direct child of a section with example section > p
   * Pseudo - state based; example: p:hover, affects p items when mouse is hovering over them
 - Keyframes:
-  * from {start} next item {next item} to {end}  
+  * from {start} next item {next item} to {end}
+
+Turns out HTML has its own styling, albeit not much. However, style="" is very useful. I can use it to change the color of the background of something, its text, and more.
   
 
 
