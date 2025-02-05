@@ -59,6 +59,18 @@ Turns out HTML has its own styling, albeit not much. However, style="" is very u
 
 ## CSS
 
+### Deliverable
+- [x] HTML Pages - home page, clicker page, and about page with my elevator pitch; each page has similar coloring but unique body layouts
+- [x] Links - there are links at the top of each page to each other page, formatted the same for easy use
+- [x] Web API - When the page loads (including reloads), the background changes to a random duck picture
+- [x] Images - There is a picture of the eyes of a duck, meant to be a "single-celled duck" to be clikced on the clicker page
+- [x] DB/Login - login and register buttons have decent formatting with placeholder text to guide the user
+- [x] Websocket - There is a count placeholder on the duck clicker page, which has been formatted to stand out
+- [x] Text - There is a scrolling text bar at the bottom of the clicker page.
+- [x] Buttons - the buttons that are to be clicked bounce when they are clicked
+
+
+
 ### Notes
 - [MDN](https://developer.mozilla.org/en-US/) is used for HTML, CSS, and JavaScript documentation.
 - CSS is formatted as follows:
@@ -76,6 +88,8 @@ Turns out HTML has its own styling, albeit not much. However, style="" is very u
   * Pseudo - state based; example: p:hover, affects p items when mouse is hovering over them
 - Keyframes:
   * from {start} next item {next item} to {end}
+
+- ChatGBT does wonders for helping you get a css foundation. It won't get you exactly what you want, but it can help you figure out what to use for what you want.
 
 
 ## JavaScript
