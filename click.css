@@ -1,0 +1,127 @@
+   /* Main Content */
+  main {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* Player Info */
+  .players {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .player-name {
+    color: darkorchid;
+    font-size: 22px;
+    margin-left: 10px;
+  }
+  
+  main div {
+    margin: 10px 0;
+  }
+  
+  /* Duck Count Styling */
+  main div span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px;
+    border: 2px solid #5b3e3e;
+    border-radius: 5px;
+    background-color: white;
+    color: purple;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  
+  button.button:hover {
+    background-color: #949494;
+  }
+  
+  /* Duck Image Button */
+  .duck-img {
+    width: 250px;
+    height: 250px;
+  }
+
+button.button:active{
+    transform: scale(90%);
+}
+  
+  /* Upgrade and Duckielution Section */
+  table {
+    width: 100%;
+  }
+  
+  table td {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  button#Upgrades {
+    background-color: darkorchid;
+    color: white;
+  }
+  
+  button#Upgrades:hover {
+    background-color: #8552ae;
+  }
+  
+  button#Duckielutions {
+    background-color: darkorchid;
+    color: white;
+  }
+  
+  button#Duckielutions:hover {
+    background-color: #8552ae;
+  }
+  
+  /* Scrolling Quote */
+.scrolling-bar {
+    background-color:darkorchid;
+    padding: 5px;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  
+  .quote {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    animation: move-quote 30s linear infinite; /* Adjust speed by changing the duration */
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+  @keyframes move-quote {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End off-screen to the left */
+    }
+  }
+  
+  .quote p {
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    margin-right: 0px; 
+    /* Add space between quotes for better visual effect */
+  }
+  
+  
+  /* Footer Styling */
+  
+  
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

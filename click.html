@@ -5,108 +5,86 @@
     <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Duck-io</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="click.css" />
+
   </head>
-  <body style="background-color: rgb(148, 110, 162)">
-    <!-- Use header, main, and footer elements to give semantic structure -->
+  <body>
     <header>
-      <h1 style="color: white">Duck-io<sup>&reg;</sup></h1>
-
-      <!-- Navigation elements -->
-      <nav>
-        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
-        <menu style="color: white">
-          <li style="color: white"><a href="index.html">Home</a></li>
-          <li style="color: white"><a href="about.html">About</a></li>
-        </menu>
-      </nav>
-
-      <!-- Since we don't have the ability to style we use old style HTML to give some visual formatting -->
-      <hr />
+      <table>
+        <tr>
+          <a class="brand">Duck-io<sup>&reg;</sup></a>
+          <td class="nav-page"><a href="index.html">Home</a></td>
+          <td class="nav-page"><a href="about.html">About</a></td>
+        </tr>
+      </table>
     </header>
 
     <main>
-      <div class="players" style="color: white">
+      <div class="players">
         Player:
         <span class="player-name">Mystery player</span>
       </div>
-
-      <!-- More formatting with old style HTML -->
       <br />
-
       <div>
-        <label for="count" style="color: white">Ducks:</label>
-        <span style="color: white; font-size: 20px; font-weight: bold;">12,345</span>
+        <label for="count">Ducks:</label>
+        <span>12,345</span>
       </div>
-
-
       <br />
-
       <div>
- 
-            <table>
-              <tr>
-                <div style="color: white">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Click Me!
+        <div>
+          Click Me!
                 </div>
-              </tr>
-                <tr>
-                    <td>
-                        <button>
-                            <img src="duck.png" alt="Starting Duck Picture">
-                        </button>
-                    </td>
-                </tr>
-                <td>
-                    <button style="background-color:white; border-color:white; color:purple">
-                        <label for="Upgrades">
-                            Upgrades
-                        </label>
+                      <button class="duck button">
+                          <img class="duck-img" src="Single-celled duck.png" alt="Starting Duck Picture">
+                      </button>
+            <table>
+              <td>
+                <button><label>Upgrades</label></button>
+                <div>
+                  <button class="button" id="Upgrades">
+                    Cell Division 
+                  </button>
+                    <!-- <button id="Upgrades">
+                      Swimming
                     </button>
-                    <div>
-                        <button>
-                            Swimming
-                        </button>
-                        <button>
-                            Flight
-                        </button>
-                        <button>
-                            Migration
-                        </button>
-                        <button>
-                            Pets
-                        </button>
-                    
-                    </div>
-                </td>
-                <td>
-                    <button style="background-color:white; border-color:white; color:purple">
-                        <label for="Duckielutions">
-                            Duckielutions
-                        </label>
+                    <button id="Upgrades">
+                      Flight
                     </button>
-                    <div>
-                    <button>
-                        Multi-Celled Duck
+                    <button id="Upgrades">
+                      Migration
                     </button>
+                    <button id="Upgrades">
+                      Pets
+                    </button>
+                   -->
+                </div>
+              </td>
+              <td>
+                <button>
+                  <label>Duckielutions</label>
+                </button>
+                <div>
+                  <button class="button" id="Duckielutions">Multi-Celled Duck</button>
                     </div>
                 </td>
             </table>
 
             <br />
-            <div id="quote" style="background-color: rgb(95, 62, 110); color: white;">
-                <div>
-                "Everything is either a duck or not a duck." - Duck Supreme &emsp; &emsp;
-                You have begun life as a single cell. No other ducks exist.
-                </div>
+            <div class="scrolling-bar">
+              <div class="quote">
+                <p>
+                "Everything is either a duck or not a duck." - Duck Supreme</p>
+
+                <p>You have begun life as a single cell. No other ducks exist.</p>
+              </div>
             </div>
         </div>
     </main>
 
     <footer>
-      <hr />
       <span class="text-reset">Emilee Forbush</span>
-      <br />
-      <a href="https://github.com/nameis-DarkRaven/startup.git">GitHub</a>
+      <a href="https://github.com/nameis-DarkRaven/startup.git">Source</a>
     </footer>
   </body>
 </html>
