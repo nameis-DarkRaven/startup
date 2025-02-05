@@ -41,7 +41,23 @@ Website: [duck-io](https://startup.duck-io.click/)
 - Personal IP address is stored in LocalHost, and your computer already knows it without having to ask around.
 - command to remote shell: ```ssh -i [pem doc] ubuntu@34.228.248.115``` or ```ssh -i [pem doc] ubuntu@duck-io.click```.
 
-## HTML & CSS Deliverable
+## HTML
+
+### Notes
+
+Turns out HTML has its own styling, albeit not much. However, style="" is very useful. I can use it to change the color of the background of something, its text, and more.
+  
+### Deliverable
+- [x] HTML Pages - home page, clicker page, and about page with my elevator pitch
+- [x] Links - there are links at the top of each page to each other page
+- [x] Web API - When the page loads (including reloads), the background changes to a random duck picture
+- [x] Images - There is a placeholder duck picture where the duck to be clicked is on the clicker page
+- [x] DB/Login - one can log in and register
+- [x] Websocket - There is a count placeholder on the duck clicker page
+- [x] Text - there is text both on the about page and in each button for the upgrades and "duckielutions", which are currently placeholders.
+
+
+## CSS
 
 ### Notes
 - [MDN](https://developer.mozilla.org/en-US/) is used for HTML, CSS, and JavaScript documentation.
@@ -59,8 +75,13 @@ Website: [duck-io](https://startup.duck-io.click/)
   * Child - similar to descendant that affects any p that is a direct child of a section with example section > p
   * Pseudo - state based; example: p:hover, affects p items when mouse is hovering over them
 - Keyframes:
-  * from {start} next item {next item} to {end}  
-  
+  * from {start} next item {next item} to {end}
 
 
+## JavaScript
 
+### Notes 
+- print = console.log(insert string or function here)
+- JS is dynamacally typed, meaning that if you are doing concatenation with strings and decide to add a number, it will turn that int into a string and concatenate it.
+- const: variable is always pointing to its assigned object; arrays can be manipulated, but if the var is a string, that string cannot change
+- some syntax: words.forEach(word) => console.log(word); words is an array; this is a lambda function
