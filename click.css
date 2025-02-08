@@ -101,10 +101,10 @@ button.button:active{
   
   @keyframes move-quote {
     0% {
-      transform: translateX(100%); /* Start off-screen to the right */
+      transform: translateX(100vw); /* Start off-screen to the right */
     }
     100% {
-      transform: translateX(-100%); /* End off-screen to the left */
+      transform: translateX(-100vw); /* End off-screen to the left */
     }
   }
   
