@@ -104,7 +104,7 @@ button.button:active{
       transform: translateX(100vw); /* Start off-screen to the right */
     }
     100% {
-      transform: translateX(-100vw); /* End off-screen to the left */
+      transform: translateX(-110vw); /* End off-screen to the left */
     }
   }
   
