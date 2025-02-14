@@ -92,6 +92,20 @@ Turns out HTML has its own styling, albeit not much. However, style="" is very u
 - ChatGBT does wonders for helping you get a css foundation. It won't get you exactly what you want, but it can help you figure out what to use for what you want.
 
 
+## React Part 1 - Transferring to React
+No javascript has been implemented yet.
+### Deliverable
+Little interaction changed. Changes are noted below.
+- [x] HTML Pages - home page, clicker page, and about page with my elevator pitch; each page is now linked to only its css file and jsx file
+- [x] Links - there are links at the top of each page to the other pages through NavLink
+- [x] Web API - When the page loads (including reloads), the background changes to a random duck picture
+- [x] Images - There is a picture of the eyes of a duck, meant to be a "single-celled duck" to be clicked on the clicker page
+- [x] DB/Login - login and register buttons redirect user to click page through NavLink
+- [x] Websocket - There is a count placeholder on the duck clicker page
+- [x] Text - There is a scrolling text bar at the bottom of the clicker page.
+- [x] Buttons - the buttons that are to be clicked bounce when they are clicked
+
+
 ## JavaScript
 
 ### Notes 
