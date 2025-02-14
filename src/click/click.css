@@ -1,13 +1,14 @@
    /* Main Content */
   main {
     text-align: center;
-    margin-top: 40px;
+    /* margin-top: 10px; */
   }
   
   /* Player Info */
   .players {
     font-size: 18px;
     font-weight: bold;
+    margin: 0px;
   }
   
   .player-name {
@@ -32,10 +33,15 @@
     border: 2px solid #5b3e3e;
     border-radius: 5px;
     background-color: white;
-    color: purple;
+    color: white;
     cursor: pointer;
     font-size: 16px;
     margin: 5px;
+  }
+
+  label.title {
+    color: purple !important;
+    background-color: white;
   }
 
   
@@ -66,7 +72,6 @@ button.button:active{
   
   button#Upgrades {
     background-color: darkorchid;
-    color: white;
   }
   
   button#Upgrades:hover {
@@ -75,7 +80,6 @@ button.button:active{
   
   button#Duckielutions {
     background-color: darkorchid;
-    color: white;
   }
   
   button#Duckielutions:hover {
@@ -97,6 +101,11 @@ button.button:active{
     margin-right: 50px;
     display: flex;
     justify-content: space-between;
+    background-color: darkorchid;
+}
+
+.quote-text{
+  background-color: darkorchid;
 }
   
   @keyframes move-quote {
