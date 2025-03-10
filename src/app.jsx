@@ -35,7 +35,7 @@ export default function App() {
 
             <footer>
                 <span className="text-reset">Emilee Forbush</span>
-                <a href="https://github.com/webprogramming260/simon-html">Source</a>
+                <a href="https://github.com/nameis-DarkRaven/startup">Source</a>
             </footer>
         </div>
     </BrowserRouter>
