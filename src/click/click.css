@@ -1,7 +1,46 @@
-   /* Main Content */
   main {
     text-align: center;
-    /* margin-top: 10px; */
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    background-color:  rgb(123, 80, 144);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 2;
+    overflow-y: auto;
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
+
+  .sidebar.open ~ .main-content {
+    margin-right: 250px;
+    color:rgb(135, 68, 169);
+  }
+
+  .sidebar-toggle {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    background-color:  rgb(123, 80, 144);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+  }
+
+  .sidebar h3 {
+    color: white;
+    text-align: center;
   }
   
   /* Player Info */
@@ -12,7 +51,6 @@
   }
   
   .player-name {
-    color: darkorchid;
     font-size: 22px;
     margin-left: 10px;
   }
@@ -33,10 +71,20 @@
     border: 2px solid #5b3e3e;
     border-radius: 5px;
     background-color: white;
-    color: white;
     cursor: pointer;
     font-size: 16px;
     margin: 5px;
+  }
+
+  .cost {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .completion-message{
+    text-align: center;
+    color: white;
   }
 
   label.title {
@@ -55,9 +103,9 @@
     height: 250px;
   }
 
-button.button:active{
-    transform: scale(90%);
-}
+  button.button:active{
+      transform: scale(90%);
+  }
   
   /* Upgrade and Duckielution Section */
   table {
@@ -88,24 +136,21 @@ button.button:active{
   
   /* Scrolling Quote */
 .scrolling-bar {
-    background-color:darkorchid;
+    background-color:  rgb(135, 68, 169);
     padding: 5px;
-    margin-top: 30px;
+    margin-top: 13%;
     overflow: hidden;
+    height: 75px;
+    position: relative;
+    z-index: 1;
   }
   
   .quote {
     display: inline-block;
     white-space: nowrap; /* Prevent text from wrapping to the next line */
     animation: move-quote 30s linear infinite; /* Adjust speed by changing the duration */
-    margin-right: 50px;
     display: flex;
     justify-content: space-between;
-    background-color: darkorchid;
-}
-
-.quote-text{
-  background-color: darkorchid;
 }
   
   @keyframes move-quote {
@@ -122,12 +167,7 @@ button.button:active{
     font-size: 18px;
     font-style: italic;
     margin-right: 0px; 
-    /* Add space between quotes for better visual effect */
-  }
-  
-  
-  /* Footer Styling */
-  
+  }  
   
   
   footer a:hover {
