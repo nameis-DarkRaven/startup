@@ -17,7 +17,7 @@ export default function App() {
                         <tr>
                             <td className="nav-page">
                             <a className="brand">Duck-io<sup>&reg;</sup></a>&emsp;
-                            <NavLink className="nav-link" to="">Home</NavLink>&emsp;
+                            <NavLink className="nav-link" to="">Login</NavLink>&emsp;
                             <NavLink className="nav-link" to="click">Click Ducks</NavLink>&emsp;
                             <NavLink className="nav-link" to="about">About</NavLink>
                             </td>
