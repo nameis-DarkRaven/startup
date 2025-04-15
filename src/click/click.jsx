@@ -77,8 +77,8 @@ export function Click() {
   const initialDuckielutions = [
     { name: 'Multi-Celled Duck', cost: 80, cps: 1, quantity: 0, image: "multi-celled duck.jpg", quote: "You have grown extra cells. What do you need those for?" },
     { name: 'Small Fish', cost: 200, cps: 2, quantity: 0, image: "", quote: "Just keep swimming. Just keep swimming." },
-    { name: 'Big Fish', cost: 750, cps: 3, quantity: 0, image: "", quote: "One fish, two fish, red fish, blue fish." },
-    { name: 'Flat Fish', cost: 4000, cps: 5, quantity: 0, image: "", quote: "Wanna play hide and seek?" },
+    { name: 'Big Fish', cost: 750, cps: 3, quantity: 0, image: "", quote: "There's always a bigger fish." },
+    { name: 'Flat Fish', cost: 4000, cps: 5, quantity: 0, image: "", quote: "One fish, two fish, red fish, blue fish. Wanna play hide and seek?" },
     { name: 'Lungfish', cost: 35000, cps: 8, quantity: 0, image: "", quote: "I can breathe!!" },
     { name: 'Lizard', cost: 475000, cps: 13, quantity: 0, image: "", quote: "" },
     { name: 'Dinosaur', cost: 10000000, cps: 21, quantity: 0, image: "", quote: "" },

@@ -13,8 +13,8 @@ It is a truth universally acknowledged that everything is either a duck or not a
 ### Key Features
 - Secure register/login over HTTPS
 - Ability to add Ducks to currency by clicking the centralized duck picture
-- Scrolling Quote Board with current duck status and a random quote generated from a given list
-- Ability to purchase buildings (x1, x10, x100, etc.), upgrades, and possibly ascensions (not yet decided) that increase the number of ducks generated per second
+- Scrolling Quote Board with current duck status and a quote generated from a given list
+- Ability to purchase buildings (x1, x10, x100, xMax.), upgrades, and potentially ascensions that increase the number of ducks generated per second
 - Ability to view the help section, settings, and profile information (email and username), which allows you to log out
 - Ability to close and reopen the upgrades tab for a better view of your duck
 - Realtime update on how many ducks you have
@@ -113,3 +113,17 @@ Little interaction changed. Changes are noted below.
 - JS is dynamacally typed, meaning that if you are doing concatenation with strings and decide to add a number, it will turn that int into a string and concatenate it.
 - const: variable is always pointing to its assigned object; arrays can be manipulated, but if the var is a string, that string cannot change
 - some syntax: words.forEach(word) => console.log(word); words is an array; this is a lambda function
+- useState can be used for reactive components, such as buttons or images that change
+- useEffect can be used for interval or lifecycle related components, such as numbers that increase over time
+
+### Deliveralbe
+Changes from this deliverable:
+- [x] UseState: "Click me" button (the duck evolution picture) now adds ducks to your duck count and gives off a +clicks animation when you click it.
+- [x] UseState: You can now buy upgrades that you have sufficient ducks for. These increase the ducks per click.
+- [x] UseState: You can now buy duckielutions that you have suffient ducks for. You can buy infinitely many of each of these.
+- [x] UseEffect: Owned duckielutions increase your passively earned ducks per second.
+- [x] Javascript: allows upgrades and duckielutions tab to open and close.
+- [x] Javascript: populates attributions based on list of attributions.
+- [x] Javascript: using useState, populates the correct image for the duck evolution picture depending on which duckielution you have achieved.
+- [x] Login: can enter credentials to access duck clicker.
+
