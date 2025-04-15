@@ -5,8 +5,8 @@
   /* Sidebar */
   .sidebar {
     position: fixed;
-    right: -300px;
-    width: 250px;
+    right: -25%;
+    width: 25%;
     height: 100%;
     top: 0;
     background-color:  rgb(123, 80, 144);
@@ -64,6 +64,31 @@
     font-size: 20px;
     font-weight: bold;
   }
+
+  /* Clicks Styling */
+  .click-animation-wrapper {
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .click-animation {
+    position: absolute;
+    font-weight: bold;
+    color: rgb(116, 40, 135);
+    animation: floatUp 1s ease-out forwards;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+  }
+  
   
   /* Button Styling */
   button {
@@ -96,7 +121,17 @@
   button.button:hover {
     background-color: #949494;
   }
+
+  .disabled-button {
+    opacity: 0.5;
+    pointer-events: none;
+  }  
   
+  .click-me {
+    margin: 0;
+    padding: 0;
+  }
+
   /* Duck Image Button */
   .duck-img {
     width: 250px;
@@ -138,7 +173,7 @@
 .scrolling-bar {
     background-color:  rgb(135, 68, 169);
     padding: 5px;
-    margin-top: 13%;
+    margin-top: 16%;
     overflow: hidden;
     height: 75px;
     position: relative;
