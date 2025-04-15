@@ -106,7 +106,7 @@ Little interaction changed. Changes are noted below.
 - [x] Buttons - the buttons that are to be clicked bounce when they are clicked
 
 
-## JavaScript
+## React Part 2 - JavaScript
 
 ### Notes 
 - print = console.log(insert string or function here)
