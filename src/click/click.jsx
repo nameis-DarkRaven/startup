@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './click.css';
 
-export function Click() {
+export function Click(props) {
   const [duckCount, setDuckCount] = useState(0);
 
   const [clickValue, setClicks] = useState(1);
-
-  const [clickAnimations, setClickAnimations] = useState([]);
 
   const handleDuckClick = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -24,6 +22,8 @@ export function Click() {
     setClickAnimations(prev => [...prev, newClick]);
     setDuckCount(duckCount + clickValue);
   };
+
+  const [clickAnimations, setClickAnimations] = useState([]);
 
   useEffect(() => {
     if (clickAnimations.length === 0) return;
@@ -76,7 +76,7 @@ export function Click() {
 
   const initialDuckielutions = [
     { name: 'Multi-Celled Duck', cost: 80, cps: 1, quantity: 0, image: "multi-celled duck.jpg", quote: "You have grown extra cells. What do you need those for?" },
-    { name: 'Small Fish', cost: 200, cps: 2, quantity: 0, image: "", quote: "Just keep swimming. Just keep swimming." },
+    { name: 'Small Fish', cost: 200, cps: 2, quantity: 0, image: "small fish.jpg", quote: "Just keep swimming. Just keep swimming." },
     { name: 'Big Fish', cost: 750, cps: 3, quantity: 0, image: "", quote: "There's always a bigger fish." },
     { name: 'Flat Fish', cost: 4000, cps: 5, quantity: 0, image: "", quote: "One fish, two fish, red fish, blue fish. Wanna play hide and seek?" },
     { name: 'Lungfish', cost: 35000, cps: 8, quantity: 0, image: "", quote: "I can breathe!!" },

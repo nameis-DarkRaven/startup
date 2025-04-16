@@ -43,7 +43,7 @@ export default function App() {
                                 setUserName(userName);
                             }} />
                     } exact />
-                    <Route path='/click' element={<Click />} />
+                    <Route path='/click' element={<Click userName={userName} />} />
                     <Route path='/about' element={<About />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>

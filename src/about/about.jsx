@@ -6,6 +6,7 @@ export function About() {
   const attributions = [
     { link: "https://www.vecteezy.com/free-photos/single-cell", attribution: "Single-celled Duck Image by Vecteezy" },
     { link: "https://www.pexels.com/photo/bacteria-on-white-background-11516492", attribution: "Multi-celled Duck image by Marek Piwnicki" },
+    { link: "https://www.pexels.com/photo/close-up-shot-of-a-puffer-fish-7863400/", attribution: "Small Fish image by Juanita Theron"},
   ]
 
   return (
