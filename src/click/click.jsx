@@ -209,18 +209,34 @@ export function Click(props) {
     fetch('/api/load')
       .then(res => res.json())
       .then(data => {
-        setDuckCount(data.duckCount);
-        setClicks(data.clickValue);
-        setCps(data.cps);
-        setGrowthRate(data.growthRate);
-        setCurrentDuckImage(data.currentDuckImage);
-        setCurrentQuote(data.currentQuote);
-        setDuckielutions(data.duckielutions);
-        setUnlockedDuckielutions(data.unlockedDuckielutions);
-        setUnlockedUpgrades(data.unlockedUpgrades);
+        setDuckCount(data.duckCount ?? 0);
+        setClicks(data.clickValue ?? 1);
+        setCps(data.cps ?? 0);
+        setGrowthRate(data.growthRate ?? 1.15);
+        setCurrentDuckImage(data.currentDuckImage ?? 'single-cell.jpg');
+        setCurrentQuote(data.currentQuote ?? "You have begun life as a single cell. No other ducks exist.");
+        setDuckielutions(data.duckielutions ?? initialDuckielutions);
+        setUnlockedDuckielutions(data.unlockedDuckielutions ?? []);
+        setUnlockedUpgrades(data.unlockedUpgrades ?? []);
       });
   }, [userName]);
 
+
+  const [quote, setQuote] = useState("To quack or not to quack? Why, that isn't a question.     Quack.");
+  const [quoteAuthor, setQuoteAuthor] = useState("Duck Supreme");
+
+  /* Extra quoteBar quote */
+  useEffect(() => {
+    fetch('https://quote.cs260.click')
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data.quote);
+        setQuoteAuthor(data.author);
+      })
+      .catch((error) => {
+        console.error('Failed to fetch quote:', error);
+      });
+  }, []);
 
   /* Sidebar functionality */
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -367,6 +383,7 @@ export function Click(props) {
             {saved && (
               <p className='quote-text'> Game Saved. </p>
             )}
+            <p className='quote-text'>{quote} - {quoteAuthor}</p>
           </div>
         </div>
       </div>
