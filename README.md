@@ -127,3 +127,16 @@ Changes from this deliverable:
 - [x] Javascript: using useState, populates the correct image for the duck evolution picture depending on which duckielution you have achieved.
 - [x] Login: can enter credentials to access duck clicker.
 
+## Service
+
+### Notes
+- "await" allows you to make sure the following funtion finishes before the next thing can run 
+
+### Deliverable
+
+- [x] Service backend endpoints for login, logout, and saving progress set up.
+- [x] Service frontend endpoints for login, logout, and saving progress set up.
+- [x] Progress saves every 30 seconds.
+- [x] Call a third-party api to provide a random duck image for the login page.
+- [ ] Call a third-party api using fetch to provide extra quotes for the scrolling bar on the bottom.
+

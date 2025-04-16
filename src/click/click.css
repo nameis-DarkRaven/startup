@@ -107,6 +107,26 @@
     margin: 0;
   }
 
+  .buy-mode button {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+  }
+  
+  .buy-mode button.selected {
+    opacity: 1;
+    font-weight: bold;
+  }
+  
+  .duckielution-button {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .duckielution-button.faded {
+    opacity: 0.5;
+  }
+  
+
   .completion-message{
     text-align: center;
     color: white;
