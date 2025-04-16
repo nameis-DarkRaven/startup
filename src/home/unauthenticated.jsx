@@ -10,14 +10,10 @@ export function Unauthenticated(props) {
 
   async function loginUser() {
     loginOrRegister(`/api/auth/login`);
-    // localStorage.setItem('userName', userName);
-    // props.onLogin(userName);
   }
 
   async function createUser() {
-    loginOrRegister(`/api/auth/register`);
-    // localStorage.setItem('userName', userName);
-    // props.onLogin(userName);
+    loginOrRegister(`/api/auth/create`);
   }
 
   async function loginOrRegister(endpoint){
