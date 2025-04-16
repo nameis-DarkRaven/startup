@@ -19,21 +19,10 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use('/api', apiRouter);
 
-// Verifies that the user is authorized to call an endpoint
-const verifyAuth = async (req, res, next) => {
-    const user = await findUser('token', req.cookies[authCookieName]);
-    if (user) {
-        req.user = user;
-        next();
-    } else {
-        res.status(401).send({ msg: 'Unauthorized' });
-    }
-};
-
 //Create auth for new user for Register
 apiRouter.post('/auth/create', async (req, res) => {
     if (await findUser('email', req.body.email)) {
-        res.status(409).send({ msg: 'Username already exists.' });
+        res.status(409).send({ msg: 'User already exists.' });
     } else {
         const user = await registerUser(req.body.email, req.body.password);
 
@@ -66,6 +55,17 @@ apiRouter.delete('/auth/logout', async (req, res) => {
     res.status(204).end();
 });
 
+// Verifies that the user is authorized to call an endpoint
+const verifyAuth = async (req, res, next) => {
+    const user = await findUser('token', req.cookies[authCookieName]);
+    if (user) {
+        req.user = user;
+        next();
+    } else {
+        res.status(401).send({ msg: 'Unauthorized' });
+    }
+};
+
 // Save game
 apiRouter.post('/save', verifyAuth, (req, res) => {
     savedProgress[req.user.email] = req.body;
@@ -73,7 +73,7 @@ apiRouter.post('/save', verifyAuth, (req, res) => {
 });
 
 // Load game
-apiRouter.get('/save', verifyAuth, (_req, res) => {
+apiRouter.get('/load', verifyAuth, (_req, res) => {
     const progress = savedProgress[_req.user.email];
     res.json(progress || {});
 });
@@ -107,12 +107,13 @@ async function findUser(field, value) {
 function setAuthCookie(res, authToken) {
     res.cookie(authCookieName, authToken, {
         maxAge: 1000 * 60 * 60 * 24 * 365,
-        secure: true,
+        secure: false,
         httpOnly: true,
         sameSite: 'strict',
     });
 }
 
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
-  }); 
+}); 

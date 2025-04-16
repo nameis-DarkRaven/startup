@@ -206,7 +206,7 @@ export function Click(props) {
   }, []);
 
   useEffect(() => {
-    fetch('/api/save')
+    fetch('/api/load')
       .then(res => res.json())
       .then(data => {
         setDuckCount(data.duckCount);

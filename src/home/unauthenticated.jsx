@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from 'react-bootstrap/Button';
-import { MessageDialogue } from './messageDialogue';
+import { MessageDialog } from './messageDialog';
 
 export function Unauthenticated(props) {
   const [userName, setUserName] = React.useState(props.userName);
@@ -9,11 +9,11 @@ export function Unauthenticated(props) {
   const [displayError, setDisplayError] = React.useState(null);
 
   async function loginUser() {
-    loginOrRegister(`/api/auth/login`);
+    loginOrRegister('/api/auth/login');
   }
 
   async function createUser() {
-    loginOrRegister(`/api/auth/create`);
+    loginOrRegister('/api/auth/create');
   }
 
   async function loginOrRegister(endpoint){
@@ -44,15 +44,15 @@ export function Unauthenticated(props) {
           <input className="login-group1" type="password" onChange={(e) => setPassword(e.target.value)} placeholder="password" />
         </div>
         <br />
-        <Button className="login-group2" id="login" variant='secondary' type="submit" onClick={() => loginUser()} disabled={!userName || !password}>
+        <Button className="login-group2" variant='secondary' onClick={() => loginUser()} disabled={!userName || !password}>
             Login
             </Button>
-        <Button className="login-group2" type="submit" variant='secondary' onClick={() => createUser()} disabled={!userName || !password}>
+        <Button className="login-group2" variant='secondary' onClick={() => createUser()} disabled={!userName || !password}>
             Register
             </Button>
       </form>
 
-      <MessageDialogue message={displayError} onHide={() => setDisplayError(null)} />
+      <MessageDialog message={displayError} onHide={() => setDisplayError(null)} />
     </>
   );
 }
